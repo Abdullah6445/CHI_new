@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_with_chi/PAGES/counter_pages/counter_vu.dart';
-import 'package:learning_with_chi/PAGES/second_pages/fetch_data_from_internet.dart';
+
 import 'package:learning_with_chi/PAGES/spotify_clone/spotify_page_vu.dart';
 
 void main() {
