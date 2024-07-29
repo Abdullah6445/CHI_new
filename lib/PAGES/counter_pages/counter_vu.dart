@@ -14,15 +14,15 @@ class CounterVU extends StackedView<CounterVM> {
         onPressed: () {
           viewModel.onAdd();
         },
-        child: Icon(obj.floatingButtonIcon),
+        child: Icon(viewModel.floatingButtonIcon),
       ),
       appBar: AppBar(
-        title: Text(obj.appbarTitle),
+        title: Text(viewModel.appbarTitle),
       ),
       body: Center(
         child: Text(
           viewModel.count.toString(),
-          style: TextStyle(fontSize: 30),
+          style: const TextStyle(fontSize: 30),
         ),
       ),
     );

@@ -11,11 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'learning',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          useMaterial3: false,
-        ),
-        home: CounterVU());
+      debugShowCheckedModeBanner: false,
+      title: 'learning',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: false,
+      ),
+      home: CounterVU(),
+    );
   }
 }
