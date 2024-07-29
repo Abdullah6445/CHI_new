@@ -25,7 +25,7 @@ class SpotifyVU extends StackedView<SpotifyVM> {
               child: const CustomSpotifyAppbar()),
           Expanded(
             child: Container(
-              // color: Colors.amber,
+              color: Colors.amber,
               // color: const Color.fromARGB(237, 0, 0, 0),
               child: const Column(
                 // mainAxisAlignment: MainAxisAlignment.start,
@@ -34,7 +34,7 @@ class SpotifyVU extends StackedView<SpotifyVM> {
                   CustomRowButtons(),
                   CustomGridView(),
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
                       "Continue Listening",
                       style: TextStyle(
@@ -44,6 +44,16 @@ class SpotifyVU extends StackedView<SpotifyVM> {
                     ),
                   ),
                   CustomListView(),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Text(
+                      "Recently played",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 18),
+                    ),
+                  ),
                 ],
               ),
             ),

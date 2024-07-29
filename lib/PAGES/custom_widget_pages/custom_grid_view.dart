@@ -6,14 +6,15 @@ class CustomGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.sizeOf(context).height * .4,
+      // color: Colors.green,
+      height: MediaQuery.sizeOf(context).height * .29,
       child: GridView.count(
         crossAxisCount: 2,
         padding: const EdgeInsets.all(10),
         crossAxisSpacing: 5,
         mainAxisSpacing: 16,
         // shrinkWrap: true,
-        childAspectRatio: (2),
+        childAspectRatio: (3),
 
         children: [
           CardWidget(
@@ -62,7 +63,7 @@ class CardWidget extends StatelessWidget {
         children: [
           Container(
             height: double.infinity,
-            width: 50,
+            width: 40,
             color: Colors.red,
             child: const Text(""),
           ),
